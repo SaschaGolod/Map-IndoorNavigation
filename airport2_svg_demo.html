@@ -206,16 +206,9 @@ function highlightPath(path) {
     // after overlay replaced, wire up interactivity
     if (typeof setupPOIListeners === 'function') setupPOIListeners();
   } catch (err) {
-    console.warn('Could not load overlay.svg, falling back to bundled overlay. Error:', err);
-    // Fallback: try adding as <image>
-    try {
-      const img = document.createElementNS('http://www.w3.org/2000/svg','image');
-      img.setAttribute('href','airport2_overlay.svg');
-      img.setAttribute('width','1328');
-      img.setAttribute('height','816');
-      img.setAttribute('id','overlay-image-fallback');
-      document.querySelector('svg').appendChild(img);
-    } catch (e) {}
+    console.warn('Could not load overlay.svg, using inline overlay. Error:', err);
+    // Do NOT add a full-size <image> here: it would sit on top of the nodes and block clicks.
+    // The inline SVG already has edges and nodes; keep them clickable.
     if (typeof setupPOIListeners === 'function') setupPOIListeners();
   }
 })();
