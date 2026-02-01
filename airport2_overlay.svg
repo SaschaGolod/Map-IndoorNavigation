@@ -15,7 +15,7 @@
 
   <!-- Edges -->
   <g id="edges">
-    <line class="edge" data-a="A1" data-b="WC" x1="225.0" y1="114.00" x2="85" y2="154" /><line class="edge" data-a="WC" data-b="restaurant2" x1="85" y1="154" x2="160" y2="214" /><line class="edge" data-a="restaurant2" data-b="cofé" x1="160" y1="214" x2="190" y2="289" /><line class="edge" data-a="cofé" data-b="shopping" x1="190" y1="289" x2="250" y2="364" /><line class="edge" data-a="A1" data-b="A2" x1="225.0" y1="114.00" x2="329.58" y2="149.93" /><line class="edge" data-a="A2" data-b="A3" x1="329.58" y1="149.93" x2="396.55" y2="220.89" /><line class="edge" data-a="A3" data-b="A4" x1="396.55" y1="220.89" x2="461.44" y2="297.84" /><line class="edge" data-a="A4" data-b="HUB" x1="461.44" y1="297.84" x2="698.23" y2="400.90" /><line class="edge" data-a="HUB" data-b="B1" x1="698.23" y1="400.90" x2="935.02" y2="503.96" /><line class="edge" data-a="B1" data-b="B2" x1="935.02" y1="503.96" x2="1019.77" y2="425.86" /><line class="edge" data-a="B2" data-b="B3" x1="1019.77" y1="425.86" x2="1104.74" y2="349.86" /><line class="edge" data-a="B3" data-b="B4" x1="1104.74" y1="349.86" x2="1189.75" y2="272.89" />
+    <line class="edge" data-a="A1" data-b="WC" x1="225.0" y1="114.00" x2="85" y2="154" /><line class="edge" data-a="WC" data-b="R1" x1="85" y1="154" x2="160" y2="214" /><line class="edge" data-a="R1" data-b="cofé" x1="160" y1="214" x2="190" y2="289" /><line class="edge" data-a="cofé" data-b="shopping" x1="190" y1="289" x2="250" y2="364" /><line class="edge" data-a="shopping" data-b="shopping2" x1="250" y1="364" x2="490" y2="664" /><line class="edge" data-a="shopping2" data-b="R2" x1="490" y1="664" x2="550" y2="664" /><line class="edge" data-a="R2" data-b="R3" x1="550" y1="664" x2="610" y2="589" /><line class="edge" data-a="A1" data-b="A2" x1="225.0" y1="114.00" x2="329.58" y2="149.93" /><line class="edge" data-a="A2" data-b="A3" x1="329.58" y1="149.93" x2="396.55" y2="220.89" /><line class="edge" data-a="A3" data-b="A4" x1="396.55" y1="220.89" x2="461.44" y2="297.84" /><line class="edge" data-a="A4" data-b="HUB" x1="461.44" y1="297.84" x2="698.23" y2="400.90" /><line class="edge" data-a="HUB" data-b="B1" x1="698.23" y1="400.90" x2="935.02" y2="503.96" /><line class="edge" data-a="B1" data-b="B2" x1="935.02" y1="503.96" x2="1019.77" y2="425.86" /><line class="edge" data-a="B2" data-b="B3" x1="1019.77" y1="425.86" x2="1104.74" y2="349.86" /><line class="edge" data-a="B3" data-b="B4" x1="1104.74" y1="349.86" x2="1189.75" y2="272.89" /><line class="edge" data-a="B4" data-b="WC2" x1="1189.75" y1="272.89" x2="1189.75" y2="197.89" />
   </g>
 
   <!-- Nodes -->
@@ -29,9 +29,9 @@
       <circle r="10" />
       <text y="-14">WC</text>
     </g>
-    <g class="poi node" data-id="restaurant2" transform="translate(160,214)">
+    <g class="poi node" data-id="R1" transform="translate(160,214)">
       <circle r="10" />
-      <text y="-14">restaurant2</text>
+      <text y="-14">R1</text>
     </g>
     <g class="poi node" data-id="cofé" transform="translate(190,289)">
       <circle r="10" />
@@ -40,6 +40,18 @@
     <g class="poi node" data-id="shopping" transform="translate(250,364)">
       <circle r="10" />
       <text y="-14">shopping</text>
+    </g>
+    <g class="poi node" data-id="shopping2" transform="translate(490,664)">
+      <circle r="10" />
+      <text y="-14">shopping2</text>
+    </g>
+    <g class="poi node" data-id="R2" transform="translate(550,664)">
+      <circle r="10" />
+      <text y="-14">R2</text>
+    </g>
+    <g class="poi node" data-id="R3" transform="translate(610,589)">
+      <circle r="10" />
+      <text y="-14">R3</text>
     </g>
     <g class="poi node" data-id="A2" transform="translate(329.58,149.93)">
       <circle r="10" />
@@ -68,6 +80,10 @@
     <g class="poi node" data-id="B4" transform="translate(1189.75,272.89)">
       <circle r="10" />
       <text y="-14">B4</text>
+    </g>
+    <g class="poi node" data-id="WC2" transform="translate(1189.75,197.89)">
+      <circle r="10" />
+      <text y="-14">WC2</text>
     </g>
     <g class="poi hub" data-id="HUB" transform="translate(698.23,400.90)">
       <circle r="8" />
