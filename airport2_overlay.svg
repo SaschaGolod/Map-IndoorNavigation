@@ -15,7 +15,7 @@
 
   <!-- Edges -->
   <g id="edges">
-    <line class="edge" data-a="A1" data-b="A2" x1="225.0" y1="114.00" x2="329.58" y2="149.93" /><line class="edge" data-a="A2" data-b="A3" x1="329.58" y1="149.93" x2="396.55" y2="220.89" /><line class="edge" data-a="A3" data-b="A4" x1="396.55" y1="220.89" x2="461.44" y2="297.84" /><line class="edge" data-a="A4" data-b="HUB" x1="461.44" y1="297.84" x2="698.23" y2="400.90" /><line class="edge" data-a="HUB" data-b="B1" x1="698.23" y1="400.90" x2="935.02" y2="503.96" /><line class="edge" data-a="B1" data-b="B2" x1="935.02" y1="503.96" x2="1019.77" y2="425.86" /><line class="edge" data-a="B2" data-b="B3" x1="1019.77" y1="425.86" x2="1104.74" y2="349.86" /><line class="edge" data-a="B3" data-b="B4" x1="1104.74" y1="349.86" x2="1189.75" y2="272.89" />
+    <line class="edge" data-a="A1" data-b="A2" x1="225.0" y1="114.00" x2="329.58" y2="149.93" /><line class="edge" data-a="A2" data-b="A3" x1="329.58" y1="149.93" x2="396.55" y2="220.89" /><line class="edge" data-a="A3" data-b="A4" x1="396.55" y1="220.89" x2="461.44" y2="297.84" /><line class="edge" data-a="A4" data-b="HUB" x1="461.44" y1="297.84" x2="698.23" y2="400.90" /><line class="edge" data-a="A4" data-b="restaurant" x1="461.44" y1="297.84" x2="580" y2="400.90" /><line class="edge" data-a="HUB" data-b="B1" x1="698.23" y1="400.90" x2="935.02" y2="503.96" /><line class="edge" data-a="B1" data-b="B2" x1="935.02" y1="503.96" x2="1019.77" y2="425.86" /><line class="edge" data-a="B2" data-b="B3" x1="1019.77" y1="425.86" x2="1104.74" y2="349.86" /><line class="edge" data-a="B3" data-b="B4" x1="1104.74" y1="349.86" x2="1189.75" y2="272.89" /><line class="edge" data-a="HUB" data-b="restaurant" x1="698.23" y1="400.90" x2="580" y2="400.90" />
   </g>
 
   <!-- Nodes -->
@@ -56,6 +56,10 @@
     <g class="poi hub" data-id="HUB" transform="translate(698.23,400.90)">
       <circle r="8" />
       <text y="-14">HUB</text>
+    </g>
+    <g class="poi node" data-id="restaurant" transform="translate(580,400.90)">
+      <circle r="10" />
+      <text y="-14">restaurant</text>
     </g>
   </g>
 </svg>
